@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153777, #4e085f);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.To-do {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px 30px 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.To-do h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.To-do h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+}
+
+.addbtn {
+    border: none;
+    outline: none;
+    padding: 12px 50px;
+    background: #ee5945;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#clearbtn {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-trash {
+    font-size: 35px;
+    color: #ee5945;
+}
+
+.li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #002765;
+    margin-bottom: 25px;
+    padding: 0 25px;
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
+    flex-wrap: wrap;
+}
+
+.li>div {
+    flex-shrink: 0;
+}
+
+.li span {
+    flex-grow: 1;
+    word-wrap: break-word;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.libtns {
+    display: flex;
+    align-items: center;
+}
+
+.libtn {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.libtn i {
+    color: #002765;
+    font-size: 28px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .To-do {
+        padding: 30px 20px 80px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .addbtn {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #clearbtn {
+        right: 20px;
+    }
+
+    .li {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .libtn {
+        width: 35px;
+        height: 35px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .To-do {
+        padding: 20px 15px 70px;
+    }
+
+    .row {
+        padding: 10px;
+    }
+
+    .addbtn {
+        padding: 8px;
+    }
+
+    .li {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .libtn {
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
+    }
+}
